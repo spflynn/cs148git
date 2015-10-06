@@ -1,0 +1,1 @@
+SELECT fldBuilding, COUNT(fldNumStudents) as NumStudents FROM tblSections WHERE fldDays LIKE "%W%" GROUP BY fldBuilding ORDER BY NumStudents DESC
