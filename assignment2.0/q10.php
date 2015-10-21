@@ -16,8 +16,8 @@
     
     $columns = 2 ;
     print '<tr>';
-    print '<td><strong>Building<strong></td>';
-    print '<td><strong># of Students<strong></td>';
+    print '<td><strong>Building</strong></td>';
+    print '<td><strong># of Students</strong></td>';
     print '</tr>';
     
     $highlight =  0; // used to highlight alternate rows

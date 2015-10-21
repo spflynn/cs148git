@@ -15,7 +15,7 @@
     print '<table>';
     
     $columns = 1 ;
-    print '<tr><strong>Over Capacity Students</strong></tr>';
+    print '<tr><th><strong>Over Capacity Students</strong></th></tr>';
     $highlight =  0; // used to highlight alternate rows
     foreach ($info2 as $rec) {
         $highlight++;

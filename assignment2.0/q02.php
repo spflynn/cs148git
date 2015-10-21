@@ -9,13 +9,12 @@
     print '<article>';
     print '<h1>Total Records: 12</h1>';
     print '<h1>' .$query .'</h1>';
-    print '<br>';
+
     print '<aside>';
     print '<table>';
     print '<tr>';
-    print '<td><strong>Department<strong></td>';
+    print '<td>Department</td>';
     print '</tr>';
-    print '<br></br>';
     $columns = 1;
     
     $highlight = 0; // used to highlight alternate rows

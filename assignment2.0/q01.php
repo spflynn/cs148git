@@ -12,8 +12,9 @@
     print '<table>';
     
     $columns = 1;
-    print '<tr><td><strong>Net ID<strong></td></tr>';
-    print '<br></br>';
+    print '<tr>';
+    print '<td>Net ID</td>';
+    print '</tr>';
     $highlight = 0; // used to highlight alternate rows
     foreach ($info2 as $rec) {
         $highlight++;

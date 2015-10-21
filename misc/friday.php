@@ -1,31 +1,50 @@
-<?php
+<?php 
+//now print out each record
+    include 'top.php';
+    $queryfile = fopen("friday.sql","r");
+    //$query = "SELECT `pmkNetId` FROM `tblTeachers`";
 
-    include top.php;
+//    if (isset($_GET("offset"))){
+//        $offset=($_GET("offset"));
+//            
+//    }
+        
+    $query = fread($queryfile,  filesize("friday.sql")).$offset;
+    $records = $thisDatabaseReader->select($query, "", 0, 1, 0, 0, false, false);
+    print '<article>';
     print '<aside>';
-    print '<table>';
 
-    $query = 'SELECT * FROM ' . $tableName;
-    $info2 = $thisDatabaseReader->select($query, "", 0, 0, 0, 0, false, false);
-
-    $highlight = 0; // used to highlight alternate rows
-    foreach ($info2 as $rec) {
-        $highlight++;
-        if ($highlight % 2 != 0) {
-            $style = ' odd ';
-        } else {
-            $style = ' even ';
-        }
-        print '<tr class="' . $style . '">';
-        for ($i = 0; $i < $columns; $i++) {
-            print '<td>' . $rec[$i] . '</td>';
-        }
-        print '</tr>';
+    $fields = array_keys($records[0]);
+    $labels = array_filter($fields, "is_string");
+    $columns = count($labels);
+    
+    print("Number of Records = " .$columns);
+    
+    
+print '<table>';
+print '<tr><th colspan="' . $columns . '">' . $query . '</th></tr>';
+// print out the column headings, note i always use a 3 letter prefix
+// and camel case like pmkCustomerId and fldFirstName
+print '<tr>';
+foreach ($labels as $label) {
+    print '<th>';
+    $camelCase = preg_split('/(?=[A-Z])/', substr($label, 3));
+    foreach ($camelCase as $one) {
+        print $one . " ";
     }
-
-    // all done
-    print '</table>';
-    print '</aside>';
-
+    print '</th>';
+}
+print '</tr>';
+//now print out each record
+foreach ($records as $record) {
+    print '<tr>';
+    for ($i = 0; $i < $columns; $i++) {
+        print '<td>'. $record[$i] . '</td>';
+    }
+    print '</tr>';
+}
+print '<a href=';
+// all done
+print '</table>';
 include "footer.php";
-
 ?>

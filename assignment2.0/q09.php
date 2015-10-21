@@ -16,8 +16,8 @@
     
     
     print '<tr>';
-    print '<td><strong>Building<strong></td>';
-    print '<td><strong># of Students<strong></td>';
+    print '<td>Building</td>';
+    print '<td># of Students</td>';
     print '</tr>';
     $columns = 2 ;
     

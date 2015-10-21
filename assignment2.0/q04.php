@@ -17,11 +17,11 @@
     $columns = 12 ;
     
     print '<tr>';
-    print '<td><strong>Course ID<strong></td>';
-    print '<td><strong>Course Number<strong></td>';
-    print '<td><strong>Course Name<strong></td>';
-    print '<td><strong>Department<strong></td>';
-    print '<td><strong>Credits<strong></td>';
+    print '<td><strong>Course ID</strong></td>';
+    print '<td><strong>Course Number</strong></td>';
+    print '<td><strong>Course Name</strong></td>';
+    print '<td><strong>Department</strong></td>';
+    print '<td><strong>Credits</strong></td>';
     print '</tr>';
     print '<br></br>';
     $highlight =  0; // used to highlight alternate rows

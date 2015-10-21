@@ -14,7 +14,7 @@
     print '<aside>';
     print '<table>';
     
-    print '<tr><strong>Course Name<strong></tr>';
+    print '<tr><th><strong>Course Name</strong></th></tr>';
     $columns = 1 ;
     
     $highlight =  0; // used to highlight alternate rows

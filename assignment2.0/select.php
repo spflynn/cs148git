@@ -9,6 +9,7 @@ include "top.php";
 
 // Begin output
 print '<article>';
+print '<ul>';
 print '<li><a href="q01.php">Query 1</a></li>';
 print '<li><a href="q02.php">Query 2</a></li>';
 print '<li><a href="q03.php">Query 3</a></li>';
@@ -21,7 +22,7 @@ print '<li><a href="q09.php">Query 9</a></li>';
 print '<li><a href="q10.php">Query 10</a></li>';
 print '<li><a href="q11.php">Query 11</a></li>';
 print '<li><a href="q12.php">Query 12</a></li>';
-
+print '</ul>';
 
 
 

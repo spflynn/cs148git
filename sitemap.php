@@ -19,7 +19,7 @@
 
     <!-- **********************     Body section      ********************** -->
     <?php
-    print '<body id="' . $path_parts['filename'] . '">';
+    print '<body id="sitemap">';
     
 //##############################################################################
 //
@@ -33,8 +33,11 @@
 
 // Begin output
 print '<article>';
+print '<ol>';
 print '<li><a href="assignment1.0/index.php">Assignment 1.0</a></li>';
-print '<li><a href="assignment2.0/index.php">Assignment 2.0</a></li>';
+print '<li><a href="assignment2.0/select.php">Assignment 2.0</a></li>';
+print '<li><a href="assignment3.0/join.php">Assignment 3.0</a></li>';
+print '</ol>';
 print '</article>';
 
 ?>

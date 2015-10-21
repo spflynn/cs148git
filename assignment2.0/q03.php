@@ -17,22 +17,21 @@
     $columns = 12 ;
     
     print '<tr>';
-    print '<td><strong>Course ID<strong></td>';
-    print '<td><strong>CRN #<strong></td>';
-    print '<td><strong>Teacher Net ID<strong></td>';
-    print '<td><strong>Max Students<strong></td>';
-    print '<td><strong>Num. of Students<strong></td>';
-    print '<td><strong>Section<strong></td>';
-    print '<td><strong>Type<strong></td>';
-    print '<td><strong>Start<strong></td>';
-    print '<td><strong>Stop<strong></td>';
-    print '<td><strong>Days<strong></td>';
-    print '<td><strong>Building<strong></td>';
-    print '<td><strong>Room<strong></td>';
+    print '<td>Course ID</td>';
+    print '<td>CRN #</td>';
+    print '<td>Teacher Net ID</td>';
+    print '<td>Max Students</td>';
+    print '<td>Num. of Students</td>';
+    print '<td>Section</td>';
+    print '<td>Type</td>';
+    print '<td>Start</td>';
+    print '<td>Stop</td>';
+    print '<td>Days</td>';
+    print '<td>Building</td>';
+    print '<td>Room</td>';
     
     
     print '</tr>';
-    print '<br></br>';
     
     $highlight =  0; // used to highlight alternate rows
     foreach ($info2 as $rec) {

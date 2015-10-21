@@ -15,11 +15,10 @@
     print '<table>';
     
     print '<tr>';
-    print '<td><strong>First Name<strong></td>';
-    print '<td><strong>Last Name<strong></td>';
-    print '<td><strong>Net ID<strong></td>';
+    print '<td><strong>First Name</strong></td>';
+    print '<td><strong>Last Name</strong></td>';
+    print '<td><strong>Net ID</strong></td>';
     print '</tr>';
-    print '<br></br>';
     
     $columns = 3 ;
     
